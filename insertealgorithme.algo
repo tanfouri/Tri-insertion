@@ -1,0 +1,33 @@
+ALGORITHM tri-par-insertion
+
+
+
+
+VAR
+ 
+    i:INTEGER :=0;
+    j:STRING;
+    c:INTEGER;
+    array : ARRAY_OF INTEGER[R];
+    R:INTEGER;
+
+    
+BEGIN
+
+    Read(i);
+    Read(R);
+    Read(array);
+
+    FOR i = 1 TO length(arr) - 1
+        c = arr[i]
+        j = i - 1
+        WHILE j >= 0 AND arr[j] > c
+            arr[j + 1] = arr[j]
+            j = j - 1
+        END WHILE;
+        arr[j + 1] = c
+    END FOR ;
+
+
+END.
+
